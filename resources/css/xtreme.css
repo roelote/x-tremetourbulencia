@@ -60,3 +60,26 @@
     position: relative;
     top: -1px;
   }
+
+  /* footer */
+
+  .footer ul li a
+  {
+   @apply text-white text-sm hover:underline;
+  }
+  .footer ul
+  {
+    @apply list-inside;
+  }
+  .footer ul li
+  {
+    @apply relative text-white;
+  }
+  .footer ul li::before
+  {
+    position: absolute;
+    top: 0px;
+    left: -15px;
+    color: #fff;
+    content: "x";
+  }
