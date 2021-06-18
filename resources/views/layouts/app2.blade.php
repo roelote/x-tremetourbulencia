@@ -27,7 +27,17 @@
                         <img src="{{ asset('img/tripadvisor-.png') }}" alt="" class="w-40">
                       </div> --}}
                       <div>
-                        <button class="bg-xtreme-500 px-5 py-3 text-sm shadow-sm font-sm tracking-wider border text-green-100 rounded-sm hover:shadow-md hover:bg-xtreme-600 ">Book NooW</button>
+                        <span class="relative inline-flex rounded-md shadow-sm">
+                          <button type="button" class="inline-flex items-center px-4 py-2 border border-gray-300 text-base leading-6 font-medium rounded-md text-white bg-xtreme-500 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150">
+                            Book Now
+                          </button>
+                          <div class="flex absolute top-0 right-0 -mt-0.5 -mr-1">
+                            <span class="absolute inline-flex animate-ping">
+                              <span class="inline-flex rounded-full h-3 w-3 bg-red-500 opacity-75"></span>
+                            </span>
+                            <span class="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                          </div>
+                        </span>
                       </div>
                   </div>
                 </div>
