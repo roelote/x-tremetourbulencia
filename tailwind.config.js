@@ -14,6 +14,7 @@ module.exports = {
                 'oswald': ['Oswald'],
                 // 'fira': ['Fira Sans'],
                 'poppins':['Poppins'],
+                'roboto':['Roboto'],
                           },
             colors:
                     {
@@ -88,6 +89,17 @@ module.exports = {
             margin: {
                 '-100%': '-100%'
             },
+
+            cursor: {
+                auto: 'auto',
+                default: 'default',
+                pointer: 'pointer',
+                text: 'text',
+               'not-allowed': 'not-allowed',
+               crosshair: 'crosshair',
+               'zoom-in': 'zoom-in',
+              }
+
 
         },
     },

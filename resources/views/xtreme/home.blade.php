@@ -2,11 +2,60 @@
 
 @section('section_home')
 
+{{-- <section class="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+  <div
+    class="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl"
+  >
+    Welcome to my site!
+  </div>
+  <video
+    autoplay
+    loop
+    muted
+    class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+  >
+    <source
+      src="https://www.salkantaytrekking.com/media/best-tour-operator-peru-salkantay-trekking.mp4"
+      type="video/mp4"
+    />
+    Your browser does not support the video tag.
+  </video>
+</section> --}}
+
+
+
     <section>
-        <div>
-            <img src="{{ asset('img/slider-salkantay-camp.jpg') }}" alt="">
+
+      <div class="swiper-container sliderh">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="relative">
+              <img  class="h-5/6 w-full" src="{{ asset('img/slider-salkantay-camp.jpg') }}" />
+              <div class="absolute bottom-2/4 right-2/4">
+                  <h2 class="text-white text-7xl font-oswald bg-red-500">SALKANTAY TREK MACHU PICCHU</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img  class="h-5/6 w-full" src="{{ asset('img/rainbow-mountain-slider.jpg') }}" />
+          </div>
+          <div class="swiper-slide">
+            <div class="relative">
+              <img  class="h-5/6 w-full" src="{{ asset('img/slider-salkantay-camp.jpg') }}" />
+              <div class="absolute bottom-2/4 right-2/4">
+                  <h2 class="text-white text-2xl font-oswald">SALKANTAY TREK MACHU PICCHU</h2>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+        {{-- <div>
+            <img src="{{ asset('img/slider-salkantay-camp.jpg') }}" alt="">
+        </div> --}}
+    </section> 
 
     <section class="text-home"> 
       <div class="container my-4">
@@ -33,7 +82,7 @@
             <h2 class="text-center sm:text-2xl lg:text-3xl font-oswald font-medium tracking-wide text-xl mb-6"> MOST POPULAR INCA TREKS & TOURS </h2>
             <span class="max-w-xs h-1 w-32 bg-green-800 sm:block mx-auto -mt-4 mb-5 hidden "></span>
             <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 gap-10 mt-10">
-              <article class="mx-auto group w-full shadow-2xl max-w-md pb-8  transform duration-500 hover:-translate-y-2 cursor-pointer">
+              <article class="mx-auto group w-full shadow-xl max-w-md pb-8  transform duration-500 hover:-translate-y-2 cursor-pointer">
                   <section class="content bg-cover bg-center h-80 " style="background-image: url({{ asset('img/1.jpg') }});">
                       <div class="flex items-end w-full h-full bg-black bg-opacity-10 text-white text-sm font-bold  p-4 ">
                           <div class="w-1/2 flex items-center">
@@ -65,7 +114,7 @@
                   </div>
               </article>
 
-              <article class="mx-auto group w-full shadow-2xl max-w-md pb-8  transform duration-500 hover:-translate-y-2 cursor-pointer group">
+              <article class="mx-auto group w-full shadow-xl max-w-md pb-8  transform duration-500 hover:-translate-y-2 cursor-pointer group">
                   <section class="content bg-cover bg-center h-80 " style="background-image: url({{ asset('img/2.jpg') }});">
                       <div class="flex items-end w-full h-full bg-black bg-opacity-10 text-white text-sm font-bold  p-4 ">
                           <div class="w-1/2 flex items-center">
@@ -96,7 +145,7 @@
                 </div>
               </article>
 
-              <article class="mx-auto group w-full shadow-2xl max-w-md pb-8  transform duration-500 hover:-translate-y-2 cursor-pointer">
+              <article class="mx-auto group w-full shadow-xl max-w-md pb-8  transform duration-500 hover:-translate-y-2 cursor-pointer">
                   <section class="content bg-cover bg-center h-80 " style="background-image: url({{ asset('img/3.jpg') }});">
                       <div class="flex items-end w-full h-full bg-black bg-opacity-10 text-white text-sm font-bold  p-4 ">
                           <div class="w-1/2 flex items-center">
@@ -127,7 +176,7 @@
                 </div>
               </article>
 
-              <article class="mx-auto group w-full shadow-2xl max-w-md pb-8  transform duration-500 hover:-translate-y-2 cursor-pointer">
+              <article class="mx-auto group w-full shadow-xl max-w-md pb-8  transform duration-500 hover:-translate-y-2 cursor-pointer">
                   <section class="content bg-cover bg-center h-80 " style="background-image: url({{ asset('img/1.jpg') }});">
                       <div class="flex items-end w-full h-full bg-black bg-opacity-10 text-white text-sm font-bold  p-4 ">
                           <div class="w-1/2 flex items-center">
@@ -161,22 +210,97 @@
         </div>
 </section>
 
-<section class="flex items-center justify-center  m-auto mb-5 bg-fixed bg-center bg-cover relative bg-gradient-to-tl from-xtreme-500 to-xtreme-700" >
-  <div class="p-10  py-10  flex  flex-col  flex-wrap  justify-center  content-center z-20">
+<section class="shadow-2xl border border-gray-200">
+      <div class="container max-w-6xl">
+        <div class="flex flex-wrap -mx-3 overflow-hidden">
+
+          <div class="my-3 px-3 w-full overflow-hidden sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+
+            <div class="swiper-container incatrail">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="{{ asset('img/11.jpg') }}" alt=""></div>
+                <div class="swiper-slide"><img src="{{ asset('img/33.png') }}" alt=""></div>
+                <div class="swiper-slide"><img src="{{ asset('img/44.png') }}" alt=""></div>
+              </div>
+               <div class="swiper-button-next" style="color: #fff"></div>
+               <div class="swiper-button-prev" style="color: #fff"></div> 
+              <div class="swiper-pagination"></div>
+            </div>
+
+             
+          </div>
+        
+          <div class="my-3 px-3 w-full overflow-hidden sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2">
+            <span><img src="{{ asset('img/hiking.svg') }}" class="w-16 mx-auto border-b-4 border-xtreme-y-500" alt=""></span>
+            <h2 class="text-center text-3xl font-oswald my-2">THE CLASSIC INCA TRAIL & MACHU PICCHU 2021 - 2022</h2>
+            <p class="text-gray-700 tracking-wide text-justify my-5">We are now booking for the 2021 season. In 2020 within hours after the permits went on sale, the majority of the popular dates from April through September sold out. By booking for 2021 Classic Inca Trail in 2021, you insure that you will not miss this incredible trek. Even after booking, you have the option until December 1st 2020 to change your dates or cancel with a full refund. </p>
+            <div class="flex justify-center mt-4">
+              <button class="border border-gray-300 bg-xtreme-500 text-white rounded-sm font-bold py-4 px-6 ml-2 flex items-center transition duration-500 hover:bg-xtreme-y-500 hover:text-gray-800">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="mr-1" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                  <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                </svg>
+
+                  INCA TRAIL AVAILABILITY
+              </button>
+              <button class="border border-gray-300 bg-xtreme-500 text-white rounded-sm font-bold py-4 px-6 ml-2 flex items-center transition duration-500 hover:bg-xtreme-y-500 hover:text-gray-800">
+                  TOURS INCA TRAIL
+                  <svg class="h-5 w-5 ml-2 fill-current" clasversion="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                       viewBox="-49 141 512 512" style="enable-background:new -49 141 512 512;" xml:space="preserve">
+                  <path id="XMLID_11_" d="M-24,422h401.645l-72.822,72.822c-9.763,9.763-9.763,25.592,0,35.355c9.763,9.764,25.593,9.762,35.355,0
+                      l115.5-115.5C460.366,409.989,463,403.63,463,397s-2.634-12.989-7.322-17.678l-115.5-115.5c-9.763-9.762-25.593-9.763-35.355,0
+                      c-9.763,9.763-9.763,25.592,0,35.355l72.822,72.822H-24c-13.808,0-25,11.193-25,25S-37.808,422-24,422z"/>
+                  </svg>
+              </button>
+          </div>
+          </div>
+        
+        </div>
+      </div>
+</section>
+
+{{-- <section class="flex items-center justify-center  m-auto mb-5 bg-fixed bg-center bg-cover relative bg-gradient-to-tl from-xtreme-500 to-xtreme-700" > --}}
+{{-- <section class="bg-gray-200">
+  <div class="container">
+      <div class="grid grid-cols-6 gap-4 ">
+          <div><img class="m-3 w-24 mx-auto fill-current text-white" src="{{ asset('img/call-center.svg') }}" alt=""></div>
+          <div><img class="m-3 w-24 mx-auto fill-current text-white" src="{{ asset('img/call-center.svg') }}" alt=""></div>
+          <div><img class="m-3 w-24 mx-auto fill-current text-white" src="{{ asset('img/call-center.svg') }}" alt=""></div>
+          <div><img class="m-3 w-24 mx-auto fill-current text-white" src="{{ asset('img/call-center.svg') }}" alt=""></div>
+          <div><img class="m-3 w-24 mx-auto fill-current text-white" src="{{ asset('img/call-center.svg') }}" alt=""></div>
+          <div><img class="m-3 w-24 mx-auto fill-current text-white" src="{{ asset('img/call-center.svg') }}" alt=""></div>
+      </div>
+  </div> --}}
+  {{-- <div class="p-10  py-10  flex  flex-col  flex-wrap  justify-center  content-center z-20">
    
     <h4 class="font-oswald text-3xl text-xtreme-y-500 uppercase tracking-wide text-center ">Your Safety is our Priority </h4>
     <h5 class="font-oswald text-base text-white tracking-wide text-center my-2">Explore with Confidence</h5>
     
-  </div>
+  </div> --}}
   {{-- <div class="overlay absolute bg-gray-900 w-full h-full opacity-30"></div> --}}
-</section>
+{{-- </section> --}}
 
 
 
 
-<section class="container mx-auto p-10 md:py-20 px-5 md:p-10 md:px-0">
-  <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 gap-10">
-      <article class="mx-auto pb-5 max-w-sm transform duration-500 hover:-translate-y-1 cursor-pointer group shadow-2xl">
+<section class="bg-gray-50">
+  <section class="container mx-auto p-10 md:py-20 px-5 md:p-10 md:px-0 ">
+    <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-4 gap-10">
+        <article class="mx-auto pb-5 max-w-sm transform duration-500 hover:-translate-y-1 cursor-pointer group shadow-2xl">
+            <div class="max-h-125 overflow-hidden">
+                <img class="transform duration-300 group-hover:scale-110" src="{{ asset('img/large (3).jpg') }}" alt="">
+            </div>
+            <div class="flex justify-between mx-5 my-3 ">
+                <h3 class="font-oswald text-lg uppercase">Rainbow Mountain Full Day</h3>
+                <div class="text-base text-right text-white border px-3 rounded-lg bg-red-500">Full Day</div>
+            </div>
+            <div class="mx-4">
+              <p class="text-sm text-gray-700">Walk the path of an Inca to Machu Picchu. This trail is full of history with ruins to enjoy every day (without crowds).</p>
+            </div>
+    
+        </article>
+
+        <article class="mx-auto pb-5 max-w-sm transform duration-500 hover:-translate-y-1 cursor-pointer group shadow-2xl">
           <div class="max-h-125 overflow-hidden">
               <img class="transform duration-300 group-hover:scale-110" src="{{ asset('img/large (3).jpg') }}" alt="">
           </div>
@@ -187,7 +311,7 @@
           <div class="mx-4">
             <p class="text-sm text-gray-700">Walk the path of an Inca to Machu Picchu. This trail is full of history with ruins to enjoy every day (without crowds).</p>
           </div>
-  
+
       </article>
 
       <article class="mx-auto pb-5 max-w-sm transform duration-500 hover:-translate-y-1 cursor-pointer group shadow-2xl">
@@ -202,46 +326,69 @@
           <p class="text-sm text-gray-700">Walk the path of an Inca to Machu Picchu. This trail is full of history with ruins to enjoy every day (without crowds).</p>
         </div>
 
+      </article>
+      <article class="mx-auto pb-5 max-w-sm transform duration-500 hover:-translate-y-1 cursor-pointer group shadow-2xl">
+        <div class="max-h-125 overflow-hidden">
+            <img class="transform duration-300 group-hover:scale-110" src="{{ asset('img/large (3).jpg') }}" alt="">
+        </div>
+        <div class="flex justify-between mx-5 my-3 ">
+            <h3 class="font-oswald text-lg uppercase">Rainbow Mountain Full Day</h3>
+            <div class="text-base text-right text-white border px-3 rounded-lg bg-red-500">Full Day</div>
+        </div>
+        <div class="mx-4">
+          <p class="text-sm text-gray-700">Walk the path of an Inca to Machu Picchu. This trail is full of history with ruins to enjoy every day (without crowds).</p>
+        </div>
     </article>
 
-    <article class="mx-auto pb-5 max-w-sm transform duration-500 hover:-translate-y-1 cursor-pointer group shadow-2xl">
-      <div class="max-h-125 overflow-hidden">
-          <img class="transform duration-300 group-hover:scale-110" src="{{ asset('img/large (3).jpg') }}" alt="">
-      </div>
-      <div class="flex justify-between mx-5 my-3 ">
-          <h3 class="font-oswald text-lg uppercase">Rainbow Mountain Full Day</h3>
-          <div class="text-base text-right text-white border px-3 rounded-lg bg-red-500">Full Day</div>
-      </div>
-      <div class="mx-4">
-        <p class="text-sm text-gray-700">Walk the path of an Inca to Machu Picchu. This trail is full of history with ruins to enjoy every day (without crowds).</p>
-      </div>
-
-  </article>
-  <article class="mx-auto pb-5 max-w-sm transform duration-500 hover:-translate-y-1 cursor-pointer group shadow-2xl">
-    <div class="max-h-125 overflow-hidden">
-        <img class="transform duration-300 group-hover:scale-110" src="{{ asset('img/large (3).jpg') }}" alt="">
-    </div>
-    <div class="flex justify-between mx-5 my-3 ">
-        <h3 class="font-oswald text-lg uppercase">Rainbow Mountain Full Day</h3>
-        <div class="text-base text-right text-white border px-3 rounded-lg bg-red-500">Full Day</div>
-    </div>
-    <div class="mx-4">
-      <p class="text-sm text-gray-700">Walk the path of an Inca to Machu Picchu. This trail is full of history with ruins to enjoy every day (without crowds).</p>
-    </div>
-
-</article>
-
   </section>
-  
+
 </section>
-
-<section class="h-96">
-
 </section>
 
 
+      <div class="container max-w-7xl">
+        <h3>The XTREME TOURBULENCIA difference</h3>
+        <div class="grid grid-cols-3 gap-5">
+            <div class="border text-center p-4">
+                   <img class="w-16 mx-auto border rounded-full p-3" src="{{ asset('img/call-center.svg') }}" alt=""> 
+                  <h4 class="text-2xl">Authentic & Unique</h4>
+                <p class="text-gray-600">Go off the beaten track. Our award-winning, licensed local guides provide incredible insights and insider tips, passionately bringing alive unique and exclusive experiences for you.</p>
+            </div>
+            <div class="border text-center p-4">
+                   <img class="w-16 mx-auto border rounded-full p-3" src="{{ asset('img/call-center.svg') }}" alt=""> 
+                  <h4 class="text-2xl">Authentic & Unique</h4>
+                <p class="text-gray-600">Go off the beaten track. Our award-winning, licensed local guides provide incredible insights and insider tips, passionately bringing alive unique and exclusive experiences for you.</p>
+            </div>
+            <div class="border text-center p-4">
+                   <img class="w-16 mx-auto border rounded-full p-3" src="{{ asset('img/call-center.svg') }}" alt=""> 
+                  <h4 class="text-2xl">Authentic & Unique</h4>
+                <p class="text-gray-600">Go off the beaten track. Our award-winning, licensed local guides provide incredible insights and insider tips, passionately bringing alive unique and exclusive experiences for you.</p>
+            </div>
+            <div class="border text-center p-4">
+                   <img class="w-16 mx-auto border rounded-full p-3" src="{{ asset('img/call-center.svg') }}" alt=""> 
+                  <h4 class="text-2xl">Authentic & Unique</h4>
+                <p class="text-gray-600">Go off the beaten track. Our award-winning, licensed local guides provide incredible insights and insider tips, passionately bringing alive unique and exclusive experiences for you.</p>
+            </div>
+            <div class="border text-center p-4">
+                   <img class="w-16 mx-auto border rounded-full p-3" src="{{ asset('img/call-center.svg') }}" alt=""> 
+                  <h4 class="text-2xl">Authentic & Unique</h4>
+                <p class="text-gray-600">Go off the beaten track. Our award-winning, licensed local guides provide incredible insights and insider tips, passionately bringing alive unique and exclusive experiences for you.</p>
+            </div>
+            <div class="border text-center p-4">
+                   <img class="w-16 mx-auto border rounded-full p-3" src="{{ asset('img/call-center.svg') }}" alt=""> 
+                  <h4 class="text-2xl">Authentic & Unique</h4>
+                <p class="text-gray-600">Go off the beaten track. Our award-winning, licensed local guides provide incredible insights and insider tips, passionately bringing alive unique and exclusive experiences for you.</p>
+            </div>
+        </div>
+      </div>
 
+
+</section>
 
 
 
 @endsection
+
+@push('scripts')
+
+@endpush

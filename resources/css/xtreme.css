@@ -28,15 +28,15 @@
   }
 
 
-  .toggleable > label:after {
+  /* .toggleable > label:after {
     content: "\25BC";
     font-size: 10px;
     padding-left: 6px;
     position: relative;
     top: -1px;
-  }
+  } */
 
-  .toggle-input {
+  /* .toggle-input {
     display: none;
   }
   .toggle-input:not(checked) ~ .mega-menu {
@@ -59,7 +59,7 @@
     padding-left: 6px;
     position: relative;
     top: -1px;
-  }
+  } */
 
   /* footer */
 
@@ -83,3 +83,33 @@
     color: #fff;
     content: "x";
   }
+
+  p, ul li
+  {
+    @apply text-gray-700;
+  }
+  p
+  {
+    @apply py-1;
+  }
+
+  .tour
+{
+  --swiper-navigation-color: #fff; 
+  --swiper-pagination-color: #fff;
+}
+.day
+{
+  @apply relative;
+}
+
+.day::after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  left: 17px;
+  z-index: -1;
+  background-color: #ececec;
+  top: 17px;
+}

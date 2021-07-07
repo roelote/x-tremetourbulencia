@@ -7,13 +7,12 @@
         <title>Xtreme Tourbulencia</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
     <body class="antialiased">
       
-    <header>
+    <header class="z-50">
       <div class="bg-gradient-to-r from-yellow-400 via-yellow-400 to-yellow-300 text-center py-1">
         <small><a href="#">Xtreme Tourbulencia Guests: We are committed to the safety of our staff, guests & the communities where we travel. Please see our TRAVELER INFORMATION for 2021 & 2022 trip details.</a></small>
       </div>
@@ -23,9 +22,9 @@
                 <div class="flex justify-between">
                   <div><img src="{{ asset('/img/logo-xtreme.png') }}" alt=""></div>
                   <div class="flex items-center ">
-                      {{-- <div>
+                       {{-- <div>
                         <img src="{{ asset('img/tripadvisor-.png') }}" alt="" class="w-40">
-                      </div> --}}
+                      </div>  --}}
                       <div>
                         <span class="relative inline-flex rounded-md shadow-sm">
                           <button type="button" class="inline-flex items-center px-4 py-2 border border-gray-300 text-base leading-6 font-medium rounded-md text-white bg-xtreme-500 hover:text-gray-500 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:text-gray-800 active:bg-gray-50 transition ease-in-out duration-150">
@@ -45,174 +44,160 @@
             </div>
          
           </div>
-        <nav class="relative bg-xtreme-500 border-b-2 border-gray-300 text-white sm:hidden md:hidden hidden lg:block">
+        <nav class="relative bg-xtreme-500 border-b-2 border-gray-300 text-white sm:hidden md:hidden hidden lg:block z-50">
             <div class="container max-w-7xl mx-auto flex justify-between">
               {{-- <div class="relative block"><img src="/img/logo-xtreme.png" alt=""></div> --}}
               <ul class="flex mx-auto">
               
                 <!--Regular Link-->
                 <li class="hover:bg-yellow-400 hover:text-xtreme-900 sm:px-1 lg:px-3">
-                  <a href="#" class="relative block py-2 px-2 lg:p-3 text-sm lg:text-sm font-semibold font-poppins ">INICIO</a>
+                  <a href="#" class="relative block py-2 px-2 lg:p-3 text-sm lg:text-sm font-semibold font-poppins text-white">INICIO</a>
                 </li>
-
                     <!--Hoverable Link-->
-                    <li class="hoverable hover:bg-yellow-400 hover:text-xtreme-900 sm:px-1 lg:px-3">
-                      <a href="#" class="relative block py-2 px-4 lg:p-3 text-sm lg:text-sm font-semibold  hover:bg-yellow-400 hover:text-xtreme-900  font-poppins">INCA TRAIL</a>
-                      <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-white">
-                        <div class="container max-w-6xl mx-auto w-full flex flex-wrap justify-between ">
-                          {{-- <div class="w-full text-white mb-8">
-                            <h2 class="font-bold text-2xl">Main Hero Message for the menu section</h2>
-                            <p>Sub-hero message, not too long and not too short. Make it just right!</p>
-                          </div> --}}
-                          <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
-                            <div class="flex items-center">
-                              <svg class="h-8 mb-3 mr-3 fill-current text-black"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M4.13 12H4a2 2 0 1 0 1.8 1.11L7.86 10a2.03 2.03 0 0 0 .65-.07l1.55 1.55a2 2 0 1 0 3.72-.37L15.87 8H16a2 2 0 1 0-1.8-1.11L12.14 10a2.03 2.03 0 0 0-.65.07L9.93 8.52a2 2 0 1 0-3.72.37L4.13 12zM0 4c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4z"/>
-                              </svg>
-                              <h3 class="font-bold text-xl text-black text-bold mb-2">INCA TRAIL </h3>
-                            </div>
-                            <div class="flex items-center py-3">
-                              <ul class="list-disc list-inside">
-                                <li>Inca Trail 4 Days / 3 Night</li>
-                                <li>Inca Trail 4 Days / 3 Night</li>
-                                <li>Inca Trail 4 Days / 3 Night</li>
-                                <li>Inca Trail 4 Days / 3 Night</li>
+                        <li class="hoverable hover:bg-yellow-400 hover:text-xtreme-900 sm:px-1 lg:px-3">
+                          <a href="#" class="relative block py-2 px-4 lg:p-3 text-sm lg:text-sm font-semibold  hover:bg-yellow-400 hover:text-xtreme-900  font-poppins text-white">INCA TRAIL</a>
+                          <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-white">
+                            <div class="container max-w-7xl mx-auto w-full flex flex-wrap justify-between ">
+                               {{-- <div class="w-full mb-8">
+                                <h2 class="font-bold text-2xl text-center">INCA TRAIL MACHU PICCHU</h2>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis aspernatur nam minus impedit nostrum delectus alias ipsum omnis sed porro, commodi nemo nihil corporis repellat quod placeat odit sapiente voluptas.</p>
+                              </div>  --}}
+                              <ul class="px-4 w-full sm:w-1/2 lg:w-1/3 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                                <div class="flex items-center">
+                                  <h3 class="font-bold text-xl text-gray-500 text-bold mb-2">Heading 1</h3>
+                                </div>
+                              </ul>
+                              <ul class="px-4 w-full sm:w-1/2 lg:w-1/3 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+                                <div class="flex items-center">
+                                  <svg class="h-5 mb-1 mr-1 fill-current text-gray-500"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M2 4v14h14v-6l2-2v10H0V2h10L8 4H2zm10.3-.3l4 4L8 16H4v-4l8.3-8.3zm1.4-1.4L16 0l4 4-2.3 2.3-4-4z"/>
+                                  </svg>
+                                  <h3 class="font-bold text-xl text-gray-500 text-bold mb-2">Heading 3</h3>
+                                </div>
+                                <p class="text-gray-500 text-sm">This proposal is a win-win situation which will cause a stellar paradigm shift, let's touch base off-line before we fire the new ux experience.</p>
+                                <div class="flex items-center py-3">
+                                  <svg class="h-6 pr-3 fill-current text-blue-300"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
+                                  </svg>
+                                  <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
+                                </div>
+                              </ul>
+                              <ul class="px-4 w-full sm:w-1/2 lg:w-1/3 border-gray-600 pb-6 pt-6 lg:pt-3">
+                                <div class="flex items-center">
+                                  <svg class="h-5 mb-1 mr-1 fill-current text-gray-500"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
+                                  </svg>
+                                  <h3 class="font-bold text-xl text-gray-500 text-bold mb-2">Heading 4</h3>
+                                </div>
+                                <p class="text-gray-500 text-sm">This is a no-brainer to wash your face, or we need to future-proof this high performance keywords granularity.</p>
+                                <div class="flex items-center py-3">
+                                  <svg class="h-6 pr-3 fill-current text-blue-300"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
+                                  </svg>
+                                  <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
+                                </div>
                               </ul>
                             </div>
-
-                          </ul>
-                          <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
-                            <div class="flex items-center">
-                              <svg class="h-8 mb-3 mr-3 fill-current text-black"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M4.13 12H4a2 2 0 1 0 1.8 1.11L7.86 10a2.03 2.03 0 0 0 .65-.07l1.55 1.55a2 2 0 1 0 3.72-.37L15.87 8H16a2 2 0 1 0-1.8-1.11L12.14 10a2.03 2.03 0 0 0-.65.07L9.93 8.52a2 2 0 1 0-3.72.37L4.13 12zM0 4c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4z"/>
-                              </svg>
-                              <h3 class="font-bold text-xl text-black text-bold mb-2">Heading 2</h3>
-                            </div>
-                            <p class="text-black text-sm">Prioritize these line items game-plan draw a line in the sand come up with something buzzworthy UX upstream selling.</p>
-                            <div class="flex items-center py-3">
-                              <svg class="h-6 pr-3 fill-current text-blue-300"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
-                              </svg>
-                              <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
-                            </div>
-                          </ul>
-                          <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
-                            <div class="flex items-center">
-                              <svg class="h-8 mb-3 mr-3 fill-current text-black"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M2 4v14h14v-6l2-2v10H0V2h10L8 4H2zm10.3-.3l4 4L8 16H4v-4l8.3-8.3zm1.4-1.4L16 0l4 4-2.3 2.3-4-4z"/>
-                              </svg>
-                              <h3 class="font-bold text-xl text-black text-bold mb-2">Heading 3</h3>
-                            </div>
-                            <p class="text-black text-sm">This proposal is a win-win situation which will cause a stellar paradigm shift, let's touch base off-line before we fire the new ux experience.</p>
-                            <div class="flex items-center py-3">
-                              <svg class="h-6 pr-3 fill-current text-blue-300"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
-                              </svg>
-                              <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
-                            </div>
-                          </ul>
-                          <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 pb-6 pt-6 lg:pt-3">
-                            <div class="flex items-center">
-                              <svg class="h-8 mb-3 mr-3 fill-current text-black"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                              </svg>
-                              <h3 class="font-bold text-xl text-black text-bold mb-2">Heading 4</h3>
-                            </div>
-                            <p class="text-black text-sm">This is a no-brainer to wash your face, or we need to future-proof this high performance keywords granularity.</p>
-                            <div class="flex items-center py-3">
-                              <svg class="h-6 pr-3 fill-current text-blue-300"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
-                              </svg>
-                              <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
-                            </div>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
+                          </div>
+                        </li>
 
                                         <!--Hoverable Link-->
                                         <li class="hoverable hover:bg-yellow-400 hover:text-xtreme-900 sm:px-1 lg:px-3">
-                                          <a href="#" class="relative block py-2 px-4 lg:p-3 text-sm lg:text-sm font-semibold  hover:bg-yellow-400 hover:text-xtreme-900 font-poppins">SALKANTAY TREK</a>
+                                          <a href="#" class="relative block py-2 px-4 lg:p-3 text-sm lg:text-sm font-semibold  hover:bg-yellow-400 hover:text-xtreme-900 font-poppins text-white">ALTERNATIVE TREK</a>
                                           <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-white">
-                                            <div class="container mx-auto w-full flex flex-wrap justify-between mx-2">
-                                              {{-- <div class="w-full text-white mb-8">
-                                                <h2 class="font-bold text-2xl">Main Hero Message for the menu section</h2>
+                                            <div class="container mx-auto w-full flex flex-wrap justify-between">
+                                               {{-- <div class="w-full bg-red-500 text-white mb-8">
+                                                <h2 class="text-2xl">Main Hero Message for the menu section</h2>
                                                 <p>Sub-hero message, not too long and not too short. Make it just right!</p>
-                                              </div> --}}
-                                              <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                                              </div>  --}}
+                                              <ul class="px-4 w-full sm:w-1/2 lg:w-1/6 border-gray-100 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
                                                 <div class="flex items-center">
-                                                  <svg class="h-8 mb-3 mr-3 fill-current text-gray-500"
-                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                                    <path d="M3 6c0-1.1.9-2 2-2h8l4-4h2v16h-2l-4-4H5a2 2 0 0 1-2-2H1V6h2zm8 9v5H8l-1.67-5H5v-2h8v2h-2z"/>
-                                                  </svg>
-                                                  <h3 class="font-bold text-xl text-gray-500 text-bold mb-2">Heading 1</h3>
+                                                  
+                                                  <h3 class="font-oswald tracking-wide text-lg border-l-2 pl-2 border-xtreme-600 text-gray-600 mb-2 uppercase">Salkantay Trek</h3>
                                                 </div>
-                                                <p class="text-gray-500 text-sm">Quarterly sales are at an all-time low create spaces to explore the accountable talk and blind vampires.</p>
-                                                <div class="flex items-center py-3">
-                                                  <svg class="h-6 pr-3 fill-current text-blue-300"
-                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                                    <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
-                                                  </svg>
-                                                  <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
+                                                <div>
+                                                  <ul class="list-inside">
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Salkantay Trek Machu Picchu 4 Days</a></li>
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Salkantay Trek Machu Picchu 5 Days</a></li>
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Salkantay Trek – Inca Trail Machu Picchu 6 Days</a></li>
+                                                  </ul>
                                                 </div>
+                                                {{-- <p class="text-gray-500 text-sm">Quarterly sales are at an all-time low create spaces to explore the accountable talk and blind vampires.</p> --}}
+                                                
                                               </ul>
-                                              <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                                              <ul class="px-4 w-full sm:w-1/2 lg:w-1/6 border-gray-100 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
                                                 <div class="flex items-center">
-                                                  <svg class="h-8 mb-3 mr-3 fill-current text-gray-500"
-                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                                    <path d="M4.13 12H4a2 2 0 1 0 1.8 1.11L7.86 10a2.03 2.03 0 0 0 .65-.07l1.55 1.55a2 2 0 1 0 3.72-.37L15.87 8H16a2 2 0 1 0-1.8-1.11L12.14 10a2.03 2.03 0 0 0-.65.07L9.93 8.52a2 2 0 1 0-3.72.37L4.13 12zM0 4c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4z"/>
-                                                  </svg>
-                                                  <h3 class="font-bold text-xl text-gray-500 text-bold mb-2">Heading 2</h3>
+                                                  
+                                                  <h3 class="font-oswald tracking-wide text-lg border-l-2 pl-2 border-xtreme-600 text-gray-600 mb-2 uppercase">Lares Trek</h3>
                                                 </div>
-                                                <p class="text-gray-500 text-sm">Prioritize these line items game-plan draw a line in the sand come up with something buzzworthy UX upstream selling.</p>
-                                                <div class="flex items-center py-3">
-                                                  <svg class="h-6 pr-3 fill-current text-blue-300"
-                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                                    <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
-                                                  </svg>
-                                                  <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
+                                                <div>
+                                                  <ul class="list-inside">
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Lares Trek Machu Picchu 4 Days</a></li>
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Lares Trek – Inca Trail Machu Picchu 4 Days</a></li>
+                                                 
+                                                  </ul>
                                                 </div>
+                                                
                                               </ul>
-                                              <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+                                              <ul class="px-4 w-full sm:w-1/2 lg:w-1/6 border-gray-100 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
                                                 <div class="flex items-center">
-                                                  <svg class="h-8 mb-3 mr-3 fill-current text-gray-500"
-                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                                    <path d="M2 4v14h14v-6l2-2v10H0V2h10L8 4H2zm10.3-.3l4 4L8 16H4v-4l8.3-8.3zm1.4-1.4L16 0l4 4-2.3 2.3-4-4z"/>
-                                                  </svg>
-                                                  <h3 class="font-bold text-xl text-gray-500 text-bold mb-2">Heading 3</h3>
+                                                  
+                                                  <h3 class="font-oswald tracking-wide text-lg border-l-2 pl-2 border-xtreme-600 text-gray-600 mb-2 uppercase">Choquequirao Trek</h3>
                                                 </div>
-                                                <p class="text-gray-500 text-sm">This proposal is a win-win situation which will cause a stellar paradigm shift, let's touch base off-line before we fire the new ux experience.</p>
-                                                <div class="flex items-center py-3">
-                                                  <svg class="h-6 pr-3 fill-current text-blue-300"
-                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                                    <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
-                                                  </svg>
-                                                  <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
+                                                <div>
+                                                  <ul class="list-inside">
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Choquequirao Trek & Huanipaca 4 Days</a></li>
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Choquequirao to Machu Picchu Trek 6 Days</a></li>
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Choquequirao Trek Machu Picchu 8 Days</a></li>
+                                                  </ul>
                                                 </div>
+                                                
                                               </ul>
-                                              <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 pb-6 pt-6 lg:pt-3">
+                                              <ul class="px-4 w-full sm:w-1/2 lg:w-1/6 border-gray-100 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
                                                 <div class="flex items-center">
-                                                  <svg class="h-8 mb-3 mr-3 fill-current text-gray-500"
-                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                                    <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                                                  </svg>
-                                                  <h3 class="font-bold text-xl text-gray-500 text-bold mb-2">Heading 4</h3>
+                                                  
+                                                  <h3 class="font-oswald tracking-wide text-lg border-l-2 pl-2 border-xtreme-600 text-gray-600 mb-2 uppercase">Inca Jungle Trek</h3>
                                                 </div>
-                                                <p class="text-gray-500 text-sm">This is a no-brainer to wash your face, or we need to future-proof this high performance keywords granularity.</p>
-                                                <div class="flex items-center py-3">
-                                                  <svg class="h-6 pr-3 fill-current text-blue-300"
-                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                                    <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
-                                                  </svg>
-                                                  <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
+                                                <div>
+                                                  <ul class="list-inside">
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Inka Jungle Trail Machu Picchu 3 Days</a></li>
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Inka Jungle Trail Machu Picchu 4 Days</a></li>
+                                                  </ul>
                                                 </div>
+                                                
+                                              </ul>
+                                              <ul class="px-4 w-full sm:w-1/2 lg:w-1/6 border-gray-100 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+                                                <div class="flex items-center">
+                                                  
+                                                  <h3 class="font-oswald tracking-wide text-lg border-l-2 pl-2 border-xtreme-600 text-gray-600 mb-2 uppercase">Huchuy Qosqo Trek</h3>
+                                                </div>
+                                                <div>
+                                                  <ul class="list-inside">
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Huchuy Qosqo to Machu Picchu 2 Days</a></li>
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Huchuy Qosqo Trek & Sacred Valley 2 Days</a></li>
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Huchuy Qosqo, Sacred Valley with Machupicchu 03 Days</a></li>
+                                                  </ul>
+                                                </div>
+                                                
+                                              </ul>
+                                              <ul class="px-4 w-full sm:w-1/2 lg:w-1/6 border-gray-100 pb-6 pt-6 lg:pt-3">
+                                                <div class="flex items-center">
+                                                  
+                                                  <h3 class="font-oswald tracking-wide text-lg border-l-2 pl-2 border-xtreme-600 text-gray-600 mb-2 uppercase">Ausangate Trek</h3>
+                                                </div>
+                                                <div>
+                                                  <ul class="list-inside">
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Ausangate Trek 4 Days</a></li>
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Ausangate Trek 5 Days</a></li>
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Ausangate Trek With Rainbow Mountain 5 Days</a></li>
+                                                    <li class="py-2 border-b text-sm"><a class="hover:text-red-500 transition duration-500" href="#">Vilcabamba to Machu Picchu Trek 5 Days</a></li>
+                                                  </ul>
+                                                </div>
+                                                
                                               </ul>
                                             </div>
                                           </div>
@@ -220,95 +205,43 @@
 
                                                             <!--Hoverable Link-->
                     <li class="hoverable hover:bg-yellow-400 hover:text-xtreme-900 sm:px-1 lg:px-3">
-                      <a href="#" class="relative block py-2 px-4 lg:p-3 text-sm lg:text-sm font-semibold  hover:bg-yellow-400 hover:text-xtreme-900 font-poppins">LARES TREK</a>
-                      <div class="p-6 mega-menu mb-16 sm:mb-0 shadow-xl bg-white">
-                        <div class="container mx-auto w-full flex flex-wrap justify-between mx-2">
-                          {{-- <div class="w-full text-white mb-8">
-                            <h2 class="font-bold text-2xl">Main Hero Message for the menu section</h2>
-                            <p>Sub-hero message, not too long and not too short. Make it just right!</p>
-                          </div> --}}
-                          <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                      <a href="#" class="relative block py-2 px-4 lg:p-3 text-sm lg:text-sm font-semibold  hover:bg-yellow-400 hover:text-xtreme-900 font-poppins text-white">MACHU PICCHU</a>
+                      <div class="px-6 py-3 mega-menu sm:mb-0 shadow-xl bg-white">
+                        <div class="container max-w-7xl mx-auto w-full flex flex-wrap justify-between ">
+                       
+                          <ul class="px-4 w-full sm:w-1/2 lg:w-1/3 border-gray-100 border-b sm:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                            <h3 class="font-oswald tracking-wide text-lg text-center pl-2 text-gray-600 mb-2 uppercase">Machu Picchu with Overnight</h3>
                             <div class="flex items-center">
-                              <svg class="h-8 mb-3 mr-3 fill-current text-gray-500"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M3 6c0-1.1.9-2 2-2h8l4-4h2v16h-2l-4-4H5a2 2 0 0 1-2-2H1V6h2zm8 9v5H8l-1.67-5H5v-2h8v2h-2z"/>
-                              </svg>
-                              <h3 class="font-bold text-xl text-gray-500 text-bold mb-2">Heading 1</h3>
-                            </div>
-                            <p class="text-gray-500 text-sm">Quarterly sales are at an all-time low create spaces to explore the accountable talk and blind vampires.</p>
-                            <div class="flex items-center py-3">
-                              <svg class="h-6 pr-3 fill-current text-blue-300"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
-                              </svg>
-                              <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
+                              <img src="{{ asset('img/mapi.jpg') }}" alt="">  
                             </div>
                           </ul>
-                          <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-r-0 lg:border-r lg:border-b-0 pb-6 pt-6 lg:pt-3">
+                          
+                          <ul class="px-4 w-full sm:w-1/2 lg:w-1/3 border-gray-100 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+                            <h3 class="font-oswald tracking-wide text-lg text-center pl-2 text-gray-600 mb-2 uppercase">Machu Picchu Full Day Tour</h3>
                             <div class="flex items-center">
-                              <svg class="h-8 mb-3 mr-3 fill-current text-gray-500"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M4.13 12H4a2 2 0 1 0 1.8 1.11L7.86 10a2.03 2.03 0 0 0 .65-.07l1.55 1.55a2 2 0 1 0 3.72-.37L15.87 8H16a2 2 0 1 0-1.8-1.11L12.14 10a2.03 2.03 0 0 0-.65.07L9.93 8.52a2 2 0 1 0-3.72.37L4.13 12zM0 4c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4z"/>
-                              </svg>
-                              <h3 class="font-bold text-xl text-gray-500 text-bold mb-2">Heading 2</h3>
-                            </div>
-                            <p class="text-gray-500 text-sm">Prioritize these line items game-plan draw a line in the sand come up with something buzzworthy UX upstream selling.</p>
-                            <div class="flex items-center py-3">
-                              <svg class="h-6 pr-3 fill-current text-blue-300"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
-                              </svg>
-                              <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
+                              <img src="{{ asset('img/mapi.jpg') }}" alt="">  
                             </div>
                           </ul>
-                          <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 border-b sm:border-b-0 sm:border-r md:border-b-0 pb-6 pt-6 lg:pt-3">
+                          <ul class="px-4 w-full sm:w-1/2 lg:w-1/3 border-gray-100 pb-6 pt-6 lg:pt-3">
+                            <h3 class="font-oswald tracking-wide text-lg text-center pl-2 text-gray-600 mb-2 uppercase">Machu Picchu & Sacred Valley Tours 2 Days</h3>
                             <div class="flex items-center">
-                              <svg class="h-8 mb-3 mr-3 fill-current text-gray-500"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M2 4v14h14v-6l2-2v10H0V2h10L8 4H2zm10.3-.3l4 4L8 16H4v-4l8.3-8.3zm1.4-1.4L16 0l4 4-2.3 2.3-4-4z"/>
-                              </svg>
-                              <h3 class="font-bold text-xl text-gray-500 text-bold mb-2">Heading 3</h3>
-                            </div>
-                            <p class="text-gray-500 text-sm">This proposal is a win-win situation which will cause a stellar paradigm shift, let's touch base off-line before we fire the new ux experience.</p>
-                            <div class="flex items-center py-3">
-                              <svg class="h-6 pr-3 fill-current text-blue-300"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
-                              </svg>
-                              <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
-                            </div>
-                          </ul>
-                          <ul class="px-4 w-full sm:w-1/2 lg:w-1/4 border-gray-600 pb-6 pt-6 lg:pt-3">
-                            <div class="flex items-center">
-                              <svg class="h-8 mb-3 mr-3 fill-current text-gray-500"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"/>
-                              </svg>
-                              <h3 class="font-bold text-xl text-gray-500 text-bold mb-2">Heading 4</h3>
-                            </div>
-                            <p class="text-gray-500 text-sm">This is a no-brainer to wash your face, or we need to future-proof this high performance keywords granularity.</p>
-                            <div class="flex items-center py-3">
-                              <svg class="h-6 pr-3 fill-current text-blue-300"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M20 10a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm-2 0a8 8 0 1 0-16 0 8 8 0 0 0 16 0zm-8 2H5V8h5V5l5 5-5 5v-3z"/>
-                              </svg>
-                              <a href="#" class="text-white bold border-b-2 border-blue-300 hover:text-blue-300">Find out more...</a>
+                              <img src="{{ asset('img/mapi.jpg') }}" alt="">  
                             </div>
                           </ul>
                         </div>
                       </div>
                     </li>
                     <li class="hover:bg-yellow-400 hover:text-xtreme-900 sm:px-1 lg:px-3">
-                      <a href="#" class="relative block py-2 px-2 lg:p-3 text-sm lg:text-sm font-semibold font-poppins ">CHOQUEQUIRAO</a>
+                      <a href="#" class="relative block py-2 px-2 lg:p-3 text-sm lg:text-sm font-semibold font-poppins text-white ">VACATION PACKAGES</a>
                     </li>
                     <li class="hover:bg-yellow-400 hover:text-xtreme-900 sm:px-1 lg:px-3">
-                      <a href="#" class="relative block py-2 px-2 lg:p-3 text-sm lg:text-sm font-semibold font-poppins ">ABOUT US</a>
+                      <a href="#" class="relative block py-2 px-2 lg:p-3 text-sm lg:text-sm font-semibold font-poppins text-white ">ABOUT US</a>
                     </li>
                     <li class="hover:bg-yellow-400 hover:text-xtreme-900 sm:px-1 lg:px-3">
-                      <a href="#" class="relative block py-2 px-2 lg:p-3 text-sm lg:text-sm font-semibold font-poppins ">BLOG</a>
+                      <a href="#" class="relative block py-2 px-2 lg:p-3 text-sm lg:text-sm font-semibold font-poppins text-white ">BLOG</a>
                     </li>
                     <li class="hover:bg-yellow-400 hover:text-xtreme-900 sm:px-1 lg:px-3">
-                      <a href="#" class="relative block py-2 px-2 lg:p-3 text-sm lg:text-sm font-semibold font-poppins ">CONTACT US</a>
+                      <a href="#" class="relative block py-2 px-2 lg:p-3 text-sm lg:text-sm font-semibold font-poppins text-white ">CONTACT US</a>
                     </li>
 
                     
@@ -319,9 +252,9 @@
 
         @yield('section_home')
   
-        <section class="trademarks">
+        <section class="trademarks bg-gray-50 mt-10">
           <div class="container">
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 my-5">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 border-t">
               <div><img class="mx-auto" src="{{ asset('img/peru-marca.png') }}" width="185" alt=""></div>
               <div><img class="mx-auto" src="{{ asset('img/directur.png') }}" width="185" alt=""></div>
               <div><img class="mx-auto" src="{{ asset('img/paypal-f.png') }}" width="185" alt=""></div>
@@ -442,8 +375,11 @@
           </div>
       </footer>
   
+ 
      <script src="{{ mix('/js/app.js') }}"></script>
-     <script async="" defer="" src="https://buttons.github.io/buttons.js"></script>
+ 
+     @stack('scripts')
+
     </body>
 </html>
 
