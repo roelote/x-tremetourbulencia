@@ -15,7 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('xtreme.home');
-});
+})->name('home');
+
+Route::get('/', function () {
+    return view('xtreme.home');
+})->name('home');
+
+
 
 Route::get('/tour', function () {
     return view('xtreme.tour');

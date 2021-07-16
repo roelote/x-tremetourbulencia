@@ -7625,7 +7625,7 @@ __webpack_require__(/*! @fancyapps/fancybox/dist/jquery.fancybox */ "./node_modu
   \********************************/
 /***/ (() => {
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".dailytours", {
   slidesPerView: 1,
   spaceBetween: 10,
   // autoplay: {
@@ -7634,7 +7634,14 @@ var swiper = new Swiper(".mySwiper", {
   // },
   pagination: {
     el: ".swiper-pagination",
-    clickable: true
+    clickable: true,
+    renderBullet: function renderBullet(index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
   },
   breakpoints: {
     640: {
@@ -7646,17 +7653,9 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 40
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 50
     }
-  }
-});
-var swiper = new Swiper(".sliderh", {
-  spaceBetween: 30,
-  effect: "fade",
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
   }
 });
 var swiper = new Swiper(".incatrail", {
