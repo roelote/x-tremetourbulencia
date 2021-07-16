@@ -3,57 +3,10 @@
 @section('section_home')
 
 <section class="bg-cover relative bg-center h-150 flex items-center justify-center z-10" style="background-image: url({{ asset('img/slider-salkantay-camp.jpg') }})">
-    <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-6xl z-10 font-oswald text-white font-black">SALKANTAY TREK MACHU PICCHU</h1>
+    {{-- <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-6xl z-10 font-oswald text-white font-black">SALKANTAY TREK MACHU PICCHU</h1> --}}
     <div class="overlay absolute bg-gray-900 w-full h-full opacity-10"></div>
 </section>
-<section class="bg-white shadow-md">
-        <div class="container max-w-7xl">
-                <div class="flex py-5">
-                       <div class="p-3 flex-1 text-center border-r border-gray-600">
-                           <div class="flex justify-center">
-                               <div class="mx-2"><img src="{{ asset('img/duration.svg') }}" class="filter w-12 mx-auto" alt=""></div>
-                               <div class="flex-1">
-                                <span class="font-oswald tracking-wide  font-medium block">Duration</span>
-                                   <span class="mx-1">4 Days - 3 Night</span>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="p-3 flex-1 text-center border-r border-gray-600">
-                           <div class="flex justify-center">
-                               <div class="mx-2"><img src="{{ asset('img/group.svg') }}" class="filter w-12 mx-auto" alt=""></div>
-                               <div class="flex-1">
-                                <span class="font-oswald tracking-wide  font-medium block">Size</span>
-                                   <span class="mx-1">Up to 8 people</span>
-                               </div>
-                           </div>
 
-                       </div>
-                       <div class="p-3 flex-1 text-center border-r border-gray-600">
-                           <div class="flex justify-center">
-                               <div class="mx-2"><img src="{{ asset('img/altitude.svg') }}" class="filter w-12 mx-auto" alt=""></div>
-                               <div class="flex-1">
-                                <span class="font-oswald tracking-wide  font-medium block">Max. Altitude</span>
-                                   <span class="mx-1">5100m / 16732ft</span>
-                               </div>
-                           </div>
-
-                       </div>
-                       <div class="p-3 flex-1 text-center border-r border-gray-600">
-                           <div class="flex justify-center">
-                               <div class="mx-2"><img src="{{ asset('img/level2.svg') }}" class="filter w-12 mx-auto" alt=""></div>
-                               <div class="flex-1">
-                                <span class="font-oswald tracking-wide  font-medium block">Act. Level</span>
-                                   <span class="mx-1">Formidable</span>
-                               </div>
-                           </div>
-
-                       </div>
-                       <div class="p-3 flex-1 text-center">
-                        <button type="button" class="bg-xtreme-y-500 text-gray-800 border border-gray-400 rounded hover:bg-xtreme-y-600 px-4 py-2 focus:outline-none">Reserve Your Spot</button>
-                        </div> 
-                </div>
-        </div>
-</section>
 <section class="my-1">
     <div class="container max-w-7xl">
         <ul class="flex text-gray-500 text-sm lg:text-base">
@@ -122,6 +75,54 @@
         </div>
     </div>
 </section>
+<section class="bg-white shadow-md">
+    <div class="container max-w-7xl">
+            <div class="flex py-5">
+                   <div class="p-3 flex-1 text-center border-r border-gray-600">
+                       <div class="flex justify-center">
+                           <div class="mx-2"><img src="{{ asset('img/duration.svg') }}" class="filter w-12 mx-auto" alt=""></div>
+                           <div class="flex-1">
+                            <span class="font-oswald tracking-wide  font-medium block">Duration</span>
+                               <span class="mx-1">4 Days - 3 Night</span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="p-3 flex-1 text-center border-r border-gray-600">
+                       <div class="flex justify-center">
+                           <div class="mx-2"><img src="{{ asset('img/group.svg') }}" class="filter w-12 mx-auto" alt=""></div>
+                           <div class="flex-1">
+                            <span class="font-oswald tracking-wide  font-medium block">Size</span>
+                               <span class="mx-1">Up to 8 people</span>
+                           </div>
+                       </div>
+
+                   </div>
+                   <div class="p-3 flex-1 text-center border-r border-gray-600">
+                       <div class="flex justify-center">
+                           <div class="mx-2"><img src="{{ asset('img/altitude.svg') }}" class="filter w-12 mx-auto" alt=""></div>
+                           <div class="flex-1">
+                            <span class="font-oswald tracking-wide  font-medium block">Max. Altitude</span>
+                               <span class="mx-1">5100m / 16732ft</span>
+                           </div>
+                       </div>
+
+                   </div>
+                   <div class="p-3 flex-1 text-center border-r border-gray-600">
+                       <div class="flex justify-center">
+                           <div class="mx-2"><img src="{{ asset('img/level2.svg') }}" class="filter w-12 mx-auto" alt=""></div>
+                           <div class="flex-1">
+                            <span class="font-oswald tracking-wide  font-medium block">Act. Level</span>
+                               <span class="mx-1">Formidable</span>
+                           </div>
+                       </div>
+
+                   </div>
+                   <div class="p-3 flex-1 text-center">
+                    <button type="button" class="bg-xtreme-y-500 text-gray-800 border border-gray-400 rounded hover:bg-xtreme-y-600 px-4 py-2 focus:outline-none">Reserve Your Spot</button>
+                    </div> 
+            </div>
+    </div>
+</section>
  <section >
      <div class="bg-gray-100 p-5 border border-gray-300">
         <p class="text-gray text-center">Make it a Private Trip! It's easy, just select "Private" on the booking form. Your group, your dates, hassle-free!
@@ -133,12 +134,12 @@
     
 </section>
 
-{{-- <section>
+<section>
     <div class="container max-w-7xl">
             <h3 class="text-3xl font-oswald text-center uppercase my-5 text-gray-800">Video Salkantay Trek</h3>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/WgY9GrMQlIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-</section> --}}
+</section>
 
 <section class="my-10 tour-main">
     <div class="container max-w-7xl">
@@ -567,12 +568,200 @@
 
 
 </section>
-<section class=""> 
-    <div class="container max-w-7xl">
-            <h4 class="text-3xl py-7 font-oswald tracking-wider  text-gray-800 text-center">TRIP ADVISOR RATING</h4>
+<section class="bg-gray-100 py-10"> 
+    <div class="container max-w-4xl">
+            <h4 class="text-3xl py-7 font-oswald tracking-wider  text-gray-800 text-center">THE BEST TREKKING FOOD IN PERU!</h4>
             <span class="max-w-xs h-1 w-32 bg-green-800 sm:block mx-auto -mt-4 mb-5 hidden "></span>
 
-            <img class="w-2/4 mx-auto" src="{{ asset('img/Food-at-the-Inca-Trail.jpg') }}" alt="">
+            <img class="w-full" src="{{ asset('img/Food-at-the-Inca-Trail.jpg') }}" alt="">
+            <p class="my-3">When you're trekking through the magical Andes, the food you enjoy should be just as mind-blowing as the views! Get ready to be treated to some gastronomical deliciousness on the trail prepared by professional chefs when you trek with us.</p>
+            
+            <div class="text-center">
+                <a type="button" class="bg-yellow-400 text-gray-800 rounded hover:bg-yellow-300 px-4 py-2 focus:outline-none">Learn More</a>
+            </div>
+
+            <h4 class="text-3xl py-7 font-oswald tracking-wider mt-16  text-xtreme-800 text-center">TREKKER RESOURCES & INFORMATION</h4>
+
+            <div class="grid grid-cols-2 gap-10">
+                <div class="flex">
+                    <img src="{{ asset('img/machu-picchu-overnight.jpg') }}" class="w-2/5 h-44" alt="">
+                    <div class="w-3/5 px-3 relative">
+                        <h5 class="font-oswald text-2xl font-light text-xtreme-700">Camping Equipment</h5>
+                        <p class="text-sm">You get the highest quality camping equipment trekking with us! Black Diamond hiking poles, Thermarest sleeping mats, Eureka tents and more.</p>
+                        <div class="text-center absolute bottom-0 right-0">
+                            <a type="button" class="bg-yellow-400 text-gray-800 rounded hover:bg-yellow-300 px-4 py-2 focus:outline-none">Learn More</a>
+                        </div>
+
+                    </div>
+                </div>
+                 <div class="flex">
+                    <img src="{{ asset('img/machu-picchu-overnight.jpg') }}" class="w-2/5 h-44" alt="">
+                    <div class="w-3/5 px-3 relative">
+                        <h5 class="font-oswald text-2xl font-light text-xtreme-700">Safety on the Trail</h5>
+                        <p class="text-sm">We are #1 in trail safety, and the only operator who offers satellite phones on all treks—to extensive medical training for our team.</p>
+                        <div class="text-center absolute bottom-0 right-0">
+                            <a type="button" class="bg-yellow-400 text-gray-800 rounded hover:bg-yellow-300 px-4 py-2 focus:outline-none">Learn More</a>
+                        </div>
+
+                    </div>
+                </div>
+                 <div class="flex">
+                    <img src="{{ asset('img/machu-picchu-overnight.jpg') }}" class="w-2/5 h-44" alt="">
+                    <div class="w-3/5 px-3 relative">
+                        <h5 class="font-oswald text-2xl font-light text-xtreme-700">Trekker FAQs</h5>
+                        <p class="text-sm">Free luggage storage for Alpaca trekkers, acclimatization tips in Cusco, and other important answers to your questions are in our FAQ.</p>
+                        <div class="text-center absolute bottom-0 right-0">
+                            <a type="button" class="bg-yellow-400 text-gray-800 rounded hover:bg-yellow-300 px-4 py-2 focus:outline-none">Learn More</a>
+                        </div>
+
+                    </div>
+                </div>
+                 <div class="flex">
+                    <img src="{{ asset('img/machu-picchu-overnight.jpg') }}" class="w-2/5 h-44" alt="">
+                    <div class="w-3/5 px-3 relative">
+                        <h5 class="font-oswald text-2xl font-light text-xtreme-700">Private Toilet Tents</h5>
+                        <p class="text-sm">We offer private, clean, environmentally-friendly toilet tents at your camp and lunch sites. Learn why this is a really big deal for our trekkers!</p>
+                        <div class="text-center absolute bottom-0 right-0">
+                            <a type="button" class="bg-yellow-400 text-gray-800 rounded hover:bg-yellow-300 px-4 py-2 focus:outline-none">Learn More</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                
+           
+    </div>
+</section>
+
+<section class="bg-gray-100 py-10"> 
+    <div class="container">
+            <h4 class="text-3xl py-7 font-oswald tracking-wider  text-gray-800 text-center uppercase"> Similar tours that you may like </h4>
+            <span class="max-w-xs h-1 w-32 bg-green-800 sm:block mx-auto -mt-4 mb-5 hidden "></span>
+            <div class="grid-cols-4 grid gap-5 my-10">
+                <div>
+                            
+              <article class="mx-auto group w-full shadow-xl max-w-md pb-8  transform duration-500 hover:-translate-y-2 cursor-pointer group">
+                  <section class="content bg-cover bg-center h-80 " style="background-image: url({{ asset('img/2.jpg') }});">
+                      <div class="flex items-end w-full h-full bg-black bg-opacity-10 text-white text-sm font-bold  p-4 ">
+                          <div class="w-1/2 flex items-center flex-row-reverse">
+                            <svg class="w-6 h-6 ml-2 place-items-end group-hover:animate-ping absolute " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            {{-- <span class="place-items-end">Book Now</span> --}}
+                        </div>
+                      </div>
+                  </section>
+
+                  <div class="mt-4 px-4">
+                    <span class="font-oswald text-xtreme-500">Cusco</span>
+                    <h2 class="text-xl font-oswald border-b pb-2 text-gray-800 font-medium">CLASSIC SALKANTAY TREK 5 DAYS</h2>
+                    
+                    <p class="mt-2 text-sm text-gray-700">Walk the path of an Inca to Machu Picchu. This trail is full of history with ruins to enjoy every day (without crowds)</p>
+                    
+                    <div class="text-center mt-4">   
+                        <a type="button" class="bg-xtreme-500 text-gray-100 rounded hover:bg-xtreme-400 px-4 py-2 focus:outline-none">View Itinerary</a>
+                    </div>
+
+                    
+                </div>
+              </article>
+                </div>
+                <div>                         
+              <article class="mx-auto group w-full shadow-xl max-w-md pb-8  transform duration-500 hover:-translate-y-2 cursor-pointer group">
+                  <section class="content bg-cover bg-center h-80 " style="background-image: url({{ asset('img/2.jpg') }});">
+                      <div class="flex items-end w-full h-full bg-black bg-opacity-10 text-white text-sm font-bold  p-4 ">
+                          <div class="w-1/2 flex items-center flex-row-reverse">
+                            <svg class="w-6 h-6 ml-2 place-items-end group-hover:animate-ping absolute " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            {{-- <span class="place-items-end">Book Now</span> --}}
+                        </div>
+                      </div>
+                  </section>
+
+                   <div class="mt-4 px-4">
+                    <span class="font-oswald text-xtreme-500">Cusco</span>
+                    <h2 class="text-xl font-oswald border-b pb-2 text-gray-800 font-medium">CLASSIC SALKANTAY TREK 5 DAYS</h2>
+                    
+                    <p class="mt-2 text-sm text-gray-700">Walk the path of an Inca to Machu Picchu. This trail is full of history with ruins to enjoy every day (without crowds)</p>
+                    
+                    <div class="text-center mt-4">   
+                        <a type="button" class="bg-xtreme-500 text-gray-100 rounded hover:bg-xtreme-400 px-4 py-2 focus:outline-none">View Itinerary</a>
+                    </div>                    
+                </div>
+              </article>
+                </div>
+                <div>
+                            
+              <article class="mx-auto group w-full shadow-xl max-w-md pb-8  transform duration-500 hover:-translate-y-2 cursor-pointer group">
+                  <section class="content bg-cover bg-center h-80 " style="background-image: url({{ asset('img/2.jpg') }});">
+                      <div class="flex items-end w-full h-full bg-black bg-opacity-10 text-white text-sm font-bold  p-4 ">
+                          <div class="w-1/2 flex items-center flex-row-reverse">
+                            <svg class="w-6 h-6 ml-2 place-items-end group-hover:animate-ping absolute " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            {{-- <span class="place-items-end">Book Now</span> --}}
+                        </div>
+                      </div>
+                  </section>
+
+                   <div class="mt-4 px-4">
+                    <span class="font-oswald text-xtreme-500">Cusco</span>
+                    <h2 class="text-xl font-oswald border-b pb-2 text-gray-800 font-medium">CLASSIC SALKANTAY TREK 5 DAYS</h2>
+                    
+                    <p class="mt-2 text-sm text-gray-700">Walk the path of an Inca to Machu Picchu. This trail is full of history with ruins to enjoy every day (without crowds)</p>
+                    
+                    <div class="text-center mt-4">   
+                        <a type="button" class="bg-xtreme-500 text-gray-100 rounded hover:bg-xtreme-400 px-4 py-2 focus:outline-none">View Itinerary</a>
+                    </div>
+
+                    
+                </div>
+              </article>
+                </div>
+                <div>
+                            
+              <article class="mx-auto group w-full shadow-xl max-w-md pb-8  transform duration-500 hover:-translate-y-2 cursor-pointer group">
+                  <section class="content bg-cover bg-center h-80 " style="background-image: url({{ asset('img/2.jpg') }});">
+                      <div class="flex items-end w-full h-full bg-black bg-opacity-10 text-white text-sm font-bold  p-4 ">
+                          <div class="w-1/2 flex items-center flex-row-reverse">
+                            <svg class="w-6 h-6 ml-2 place-items-end group-hover:animate-ping absolute " xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            {{-- <span class="place-items-end">Book Now</span> --}}
+                        </div>
+                      </div>
+                  </section>
+
+                   <div class="mt-4 px-4">
+                    <span class="font-oswald text-xtreme-500">Cusco</span>
+                    <h2 class="text-xl font-oswald border-b pb-2 text-gray-800 font-medium">CLASSIC SALKANTAY TREK 5 DAYS</h2>
+                    
+                    <p class="mt-2 text-sm text-gray-700">Walk the path of an Inca to Machu Picchu. This trail is full of history with ruins to enjoy every day (without crowds)</p>
+                    
+                    <div class="text-center mt-4">   
+                        <a type="button" class="bg-xtreme-500 text-gray-100 rounded hover:bg-xtreme-400 px-4 py-2 focus:outline-none">View Itinerary</a>
+                    </div>
+
+                    
+                </div>
+              </article>
+                </div>
+           
+              
+            </div>
     </div>
 </section>
 @endsection

@@ -403,13 +403,13 @@
         </section>
 
     
-       {{-- <section>
+        <section>
           <div>
           </div>  
           <div class="bg-yellow-400 py-2 text-center">
            <span class="font-oswald font-medium tracking-widest"><span class="text-2xl">❝</span> AT RHYTHM OF ADVENTURE <span class="text-2xl">❞</span></span>
           </div>
-       </section> --}}
+       </section> 
       
         <footer class="footer relative pt-1 border-b-1 border-white bg-gradient-to-r from-xtreme-600 via-xtreme-700 to-xtreme-600">
           <div class="container mx-auto px-6">

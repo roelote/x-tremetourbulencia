@@ -102,8 +102,8 @@
                   </section>
 
                   <div class="mt-4 px-4">
-                      <span class="font-oswald text-red-500">Cusco</span>
-                      <h2 class="text-xl font-oswald border-b pb-2">CLASSIC SALKANTAY TREK 5 DAYS</h2>
+                      <span class="font-oswald text-xtreme-500">Cusco</span>
+                      <h2 class="text-xl font-oswald border-b pb-2 text-gray-800 font-medium">CLASSIC SALKANTAY TREK 5 DAYS</h2>
                       
                       <p class="mt-2 text-sm text-gray-700">Walk the path of an Inca to Machu Picchu. This trail is full of history with ruins to enjoy every day (without crowds)</p>
                       
@@ -134,8 +134,8 @@
                   </section>
 
                   <div class="mt-4 px-4">
-                    <span class="font-oswald text-red-500">Cusco</span>
-                    <h2 class="text-xl font-oswald border-b pb-2">CLASSIC SALKANTAY TREK 5 DAYS</h2>
+                    <span class="font-oswald text-xtreme-500">Cusco</span>
+                    <h2 class="text-xl font-oswald border-b pb-2 text-gray-800 font-medium">CLASSIC SALKANTAY TREK 5 DAYS</h2>
                     
                     <p class="mt-2 text-sm text-gray-700">Walk the path of an Inca to Machu Picchu. This trail is full of history with ruins to enjoy every day (without crowds)</p>
                     
@@ -165,8 +165,8 @@
                   </section>
 
                   <div class="mt-4 px-4">
-                    <span class="font-oswald text-red-500">Cusco</span>
-                    <h2 class="text-xl font-oswald border-b pb-2">CLASSIC SALKANTAY TREK 5 DAYS</h2>
+                    <span class="font-oswald text-xtreme-500">Cusco</span>
+                    <h2 class="text-xl font-oswald border-b pb-2 text-gray-800 font-medium">CLASSIC SALKANTAY TREK 5 DAYS</h2>
                     
                     <p class="mt-2 text-sm text-gray-700">Walk the path of an Inca to Machu Picchu. This trail is full of history with ruins to enjoy every day (without crowds)</p>
                     
@@ -196,8 +196,8 @@
                   </section>
               
                   <div class="mt-4 px-4">
-                    <span class="font-oswald text-red-500">Cusco</span>
-                    <h2 class="text-xl font-oswald border-b pb-2">CLASSIC SALKANTAY TREK 5 DAYS</h2>
+                    <span class="font-oswald text-xtreme-500">Cusco</span>
+                    <h2 class="text-xl font-oswald border-b pb-2 text-gray-800 font-medium">CLASSIC SALKANTAY TREK 5 DAYS</h2>
                     
                     <p class="mt-2 text-sm text-gray-700">Walk the path of an Inca to Machu Picchu. This trail is full of history with ruins to enjoy every day (without crowds)</p>
                     
@@ -375,7 +375,7 @@
   </section>
 </section>
 
-<section class="py-10">
+{{-- <section class="py-10">
 
       <div class="container">
         <h2 class="text-center sm:text-2xl lg:text-3xl font-oswald font-medium tracking-wide text-xl mb-10 uppercase"> The XTREME TOURBULENCIA difference </h2>
@@ -410,7 +410,7 @@
       </div>
 
 
-</section>
+</section> --}}
 
 
 
